@@ -25,5 +25,14 @@
     "telefone": "(81) 8252-3370",
     "email": "sao12@azulcargo.com.br",
     "numero_cotacao": "54329085"
+  },
+  {
+    "data": "14/08/2026",
+    "hora": "15:29:34",
+    "funcionario": "PAULO HENRIQUE",
+    "nome_cliente": "CELSO",
+    "telefone": "(11) 99621-9951",
+    "email": "sao12@azulcargo.com.br",
+    "numero_cotacao": "55032972"
   }
 ]
