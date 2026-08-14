@@ -16,5 +16,14 @@
     "telefone": "(11) 93496-1300",
     "email": "gdslog.jessica@hotmail.com",
     "numero_cotacao": "12345678"
+  },
+  {
+    "data": "14/08/2026",
+    "hora": "13:16:04",
+    "funcionario": "PAULO HENRIQUE",
+    "nome_cliente": "JENIFFER",
+    "telefone": "(81) 8252-3370",
+    "email": "sao12@azulcargo.com.br",
+    "numero_cotacao": "54329085"
   }
 ]
