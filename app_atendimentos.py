@@ -236,60 +236,64 @@ aba_cadastro, aba_relatorio = st.tabs(
 )
 
 with aba_cadastro:
-    with st.form("form_atendimento", clear_on_submit=True):
+    funcionario = st.selectbox(
+        "Funcionário *",
+        ["SELECIONE..."] + FUNCIONARIOS,
+        key="funcionario"
+    )
 
-        funcionario = st.selectbox(
-            "Funcionário *",
-            ["SELECIONE..."] + FUNCIONARIOS
+    nome_cliente = st.text_input(
+        "Nome do cliente *",
+        placeholder="Ex.: MARIA SILVA",
+        key="nome_cliente"
+    )
+
+    telefone = st.text_input(
+        "Telefone *",
+        placeholder="Ex.: (11) 99999-9999",
+        key="telefone"
+    )
+
+    sem_email = st.checkbox(
+        "Cliente não possui / não informou e-mail",
+        key="sem_email"
+    )
+
+    if sem_email:
+        email = ""
+        st.caption("O atendimento poderá ser salvo sem e-mail.")
+    else:
+        email = st.text_input(
+            "E-mail do cliente *",
+            placeholder="Ex.: cliente@empresa.com.br",
+            key="email"
         )
 
-        nome_cliente = st.text_input(
-            "Nome do cliente *",
-            placeholder="Ex.: MARIA SILVA"
-        )
+    numero_cotacao = st.text_input(
+        "Número da cotação *",
+        placeholder="Exatamente 8 dígitos",
+        max_chars=8,
+        key="numero_cotacao"
+    )
 
-        telefone = st.text_input(
-            "Telefone *",
-            placeholder="Ex.: (11) 99999-9999"
-        )
-
-        sem_email = st.checkbox(
-            "Cliente não possui / não informou e-mail"
-        )
-
-        if sem_email:
-            email = ""
-            st.caption("O atendimento poderá ser salvo sem e-mail.")
-        else:
-            email = st.text_input(
-                "E-mail do cliente *",
-                placeholder="Ex.: cliente@empresa.com.br"
-            )
-
-        numero_cotacao = st.text_input(
-            "Número da cotação *",
-            placeholder="Exatamente 8 dígitos",
-            max_chars=8
-        )
-
-        salvar = st.form_submit_button(
-            "💾 SALVAR ATENDIMENTO",
-            use_container_width=True,
-            type="primary"
-        )
+    salvar = st.button(
+        "💾 SALVAR ATENDIMENTO",
+        use_container_width=True,
+        type="primary"
+    )
 
     if salvar:
         erros = []
 
-        nome_cliente = nome_cliente.strip().upper()
+        nome_cliente_tratado = nome_cliente.strip().upper()
         telefone_numeros = somente_numeros(telefone)
-        email = email.strip().lower()
-        numero_cotacao = somente_numeros(numero_cotacao)
+        email_tratado = email.strip().lower() if not sem_email else ""
+        numero_cotacao_tratado = somente_numeros(numero_cotacao)
 
         if funcionario == "SELECIONE...":
             erros.append("Selecione o funcionário.")
 
-        if not nome_cliente:
+        if not nome_cliente_tratado:
             erros.append("Informe o nome do cliente.")
 
         if not telefone_valido(telefone_numeros):
@@ -297,12 +301,12 @@ with aba_cadastro:
                 "O telefone deve possuir 10 ou 11 dígitos, incluindo o DDD."
             )
 
-        if not sem_email and not email_valido(email):
+        if not sem_email and not email_valido(email_tratado):
             erros.append(
                 "Informe um e-mail válido ou marque que o cliente não possui / não informou e-mail."
             )
 
-        if not cotacao_valida(numero_cotacao):
+        if not cotacao_valida(numero_cotacao_tratado):
             erros.append(
                 "O número da cotação deve possuir exatamente 8 dígitos."
             )
@@ -320,12 +324,12 @@ with aba_cadastro:
                 "data": agora.strftime("%d/%m/%Y"),
                 "hora": agora.strftime("%H:%M:%S"),
                 "funcionario": funcionario,
-                "nome_cliente": nome_cliente,
+                "nome_cliente": nome_cliente_tratado,
                 "telefone": formatar_telefone(
                     telefone_numeros
                 ),
-                "email": email if not sem_email else "NÃO INFORMADO",
-                "numero_cotacao": numero_cotacao,
+                "email": email_tratado if not sem_email else "NÃO INFORMADO",
+                "numero_cotacao": numero_cotacao_tratado,
             }
 
             try:
@@ -333,8 +337,22 @@ with aba_cadastro:
 
                 st.success(
                     "✅ Atendimento registrado com sucesso — "
-                    f"Cotação {numero_cotacao}"
+                    f"Cotação {numero_cotacao_tratado}"
                 )
+
+                # Limpa os campos após salvar sem usar st.form.
+                for chave in [
+                    "funcionario",
+                    "nome_cliente",
+                    "telefone",
+                    "sem_email",
+                    "email",
+                    "numero_cotacao",
+                ]:
+                    if chave in st.session_state:
+                        del st.session_state[chave]
+
+                st.rerun()
 
             except Exception as exc:
                 st.error(
