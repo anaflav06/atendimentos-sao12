@@ -34,5 +34,14 @@
     "telefone": "(11) 99621-9951",
     "email": "sao12@azulcargo.com.br",
     "numero_cotacao": "55032972"
+  },
+  {
+    "data": "14/08/2026",
+    "hora": "16:31:17",
+    "funcionario": "CLEBER",
+    "nome_cliente": "TESTE",
+    "telefone": "(11) 93496-1300",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "12345678"
   }
 ]
