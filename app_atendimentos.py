@@ -253,10 +253,18 @@ with aba_cadastro:
             placeholder="Ex.: (11) 99999-9999"
         )
 
-        email = st.text_input(
-            "E-mail do cliente *",
-            placeholder="Ex.: cliente@empresa.com.br"
+        sem_email = st.checkbox(
+            "Cliente não possui / não informou e-mail"
         )
+
+        if sem_email:
+            email = ""
+            st.caption("O atendimento poderá ser salvo sem e-mail.")
+        else:
+            email = st.text_input(
+                "E-mail do cliente *",
+                placeholder="Ex.: cliente@empresa.com.br"
+            )
 
         numero_cotacao = st.text_input(
             "Número da cotação *",
@@ -289,8 +297,10 @@ with aba_cadastro:
                 "O telefone deve possuir 10 ou 11 dígitos, incluindo o DDD."
             )
 
-        if not email_valido(email):
-            erros.append("Informe um e-mail válido.")
+        if not sem_email and not email_valido(email):
+            erros.append(
+                "Informe um e-mail válido ou marque que o cliente não possui / não informou e-mail."
+            )
 
         if not cotacao_valida(numero_cotacao):
             erros.append(
@@ -314,7 +324,7 @@ with aba_cadastro:
                 "telefone": formatar_telefone(
                     telefone_numeros
                 ),
-                "email": email,
+                "email": email if not sem_email else "NÃO INFORMADO",
                 "numero_cotacao": numero_cotacao,
             }
 
