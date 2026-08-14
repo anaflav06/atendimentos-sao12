@@ -7,5 +7,14 @@
     "telefone": "(11) 93496-1300",
     "email": "gdslog.jessica@hotmail.com",
     "numero_cotacao": "12345678"
+  },
+  {
+    "data": "14/08/2026",
+    "hora": "12:59:00",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "TESTE",
+    "telefone": "(11) 93496-1300",
+    "email": "gdslog.jessica@hotmail.com",
+    "numero_cotacao": "12345678"
   }
 ]
