@@ -241,5 +241,14 @@
     "telefone": "(11) 94219-2333",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "78251062"
+  },
+  {
+    "data": "18/08/2026",
+    "hora": "10:38:53",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "PABLO",
+    "telefone": "(31) 7180-0051",
+    "email": "pablo.rodrigues@milplan.com.br",
+    "numero_cotacao": "78297144"
   }
 ]
