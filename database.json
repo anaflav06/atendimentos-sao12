@@ -250,5 +250,14 @@
     "telefone": "(31) 7180-0051",
     "email": "pablo.rodrigues@milplan.com.br",
     "numero_cotacao": "78297144"
+  },
+  {
+    "data": "18/08/2026",
+    "hora": "10:42:45",
+    "funcionario": "PAULO HENRIQUE",
+    "nome_cliente": "ADRIANA",
+    "telefone": "(54) 3125-0904",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "78317573"
   }
 ]
