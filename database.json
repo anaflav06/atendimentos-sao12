@@ -655,5 +655,14 @@
     "telefone": "(11) 98979-0333",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "50193861"
+  },
+  {
+    "data": "25/08/2026",
+    "hora": "09:42:04",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "BRUNO",
+    "telefone": "(62) 8147-7362",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "50266101"
   }
 ]
