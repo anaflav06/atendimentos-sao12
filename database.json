@@ -1258,5 +1258,14 @@
     "telefone": "(11) 1111-1111",
     "email": "clarisse.silva@milplan.com.br",
     "numero_cotacao": "73376612"
+  },
+  {
+    "data": "03/09/2026",
+    "hora": "15:45:23",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "GABI",
+    "telefone": "(11) 96410-1761",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "75645356"
   }
 ]
