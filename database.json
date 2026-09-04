@@ -1330,5 +1330,14 @@
     "telefone": "(11) 98184-5245",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "23971113"
+  },
+  {
+    "data": "04/09/2026",
+    "hora": "14:44:44",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "FARMATECH",
+    "telefone": "(11) 99100-4764",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "25021905"
   }
 ]
