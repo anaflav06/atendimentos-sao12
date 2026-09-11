@@ -1636,5 +1636,14 @@
     "telefone": "(11) 2337-2542",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "40823996"
+  },
+  {
+    "data": "11/09/2026",
+    "hora": "10:24:04",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "GUILHERME ORTOVET",
+    "telefone": "(11) 97146-2470",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "50341616"
   }
 ]
