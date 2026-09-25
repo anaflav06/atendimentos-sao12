@@ -3841,5 +3841,14 @@
     "telefone": "(11) 99918-0000",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "50135050"
+  },
+  {
+    "data": "25/09/2026",
+    "hora": "14:06:29",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "ZANINI",
+    "telefone": "(11) 98515-9132",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "50223246"
   }
 ]
