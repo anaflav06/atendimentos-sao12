@@ -3832,5 +3832,14 @@
     "telefone": "(11) 2067-1027",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "50012675"
+  },
+  {
+    "data": "25/09/2026",
+    "hora": "13:28:12",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "MIGUEL",
+    "telefone": "(11) 99918-0000",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "50135050"
   }
 ]
