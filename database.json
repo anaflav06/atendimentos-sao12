@@ -5236,5 +5236,14 @@
     "telefone": "(11) 11111-1111",
     "email": "thiago.camargo@icl-group.com",
     "numero_cotacao": "71430321"
+  },
+  {
+    "data": "20/10/2026",
+    "hora": "11:07:30",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "ROBERTA",
+    "telefone": "(11) 98187-1712",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "71675844"
   }
 ]
