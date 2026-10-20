@@ -5227,5 +5227,14 @@
     "telefone": "(11) 2946-4646",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "70841923"
+  },
+  {
+    "data": "20/10/2026",
+    "hora": "10:41:18",
+    "funcionario": "PAULO HENRIQUE",
+    "nome_cliente": "THIAGO",
+    "telefone": "(11) 11111-1111",
+    "email": "thiago.camargo@icl-group.com",
+    "numero_cotacao": "71430321"
   }
 ]
