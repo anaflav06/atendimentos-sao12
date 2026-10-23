@@ -5434,5 +5434,14 @@
     "telefone": "(11) 5584-6481",
     "email": "adm@gasart.com.br",
     "numero_cotacao": "51013502"
+  },
+  {
+    "data": "23/10/2026",
+    "hora": "09:17:56",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "JOÃO PAULO",
+    "telefone": "(62) 8236-7088",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "40778802"
   }
 ]
