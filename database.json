@@ -5659,5 +5659,14 @@
     "telefone": "(11) 97680-6052",
     "email": "ricardo.botelho@vht.com.br",
     "numero_cotacao": "52044252"
+  },
+  {
+    "data": "26/10/2026",
+    "hora": "14:04:02",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "CELSO",
+    "telefone": "(11) 99621-9951",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "52095035"
   }
 ]
