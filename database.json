@@ -5623,5 +5623,14 @@
     "telefone": "(11) 5584-6481",
     "email": "administracao@gasart.com.br",
     "numero_cotacao": "51902900"
+  },
+  {
+    "data": "26/10/2026",
+    "hora": "11:13:23",
+    "funcionario": "PAULO HENRIQUE",
+    "nome_cliente": "PAULO",
+    "telefone": "(11) 99237-8837",
+    "email": "paula@avimach.com.br",
+    "numero_cotacao": "51955411"
   }
 ]
