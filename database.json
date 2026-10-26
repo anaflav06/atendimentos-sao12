@@ -5632,5 +5632,14 @@
     "telefone": "(11) 99237-8837",
     "email": "paula@avimach.com.br",
     "numero_cotacao": "51955411"
+  },
+  {
+    "data": "26/10/2026",
+    "hora": "11:30:26",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "PAULO HENDRIO",
+    "telefone": "(68) 9252-5024",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "51959530"
   }
 ]
