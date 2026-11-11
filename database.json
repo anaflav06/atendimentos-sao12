@@ -6442,5 +6442,14 @@
     "telefone": "(11) 1111-1111",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "55851364"
+  },
+  {
+    "data": "11/11/2026",
+    "hora": "10:31:03",
+    "funcionario": "PAULO SERGIO",
+    "nome_cliente": "ALEXANDRE DIGEL",
+    "telefone": "(11) 2065-7867",
+    "email": "NÃO INFORMADO",
+    "numero_cotacao": "55845635"
   }
 ]
