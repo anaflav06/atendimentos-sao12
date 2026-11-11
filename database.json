@@ -6451,5 +6451,14 @@
     "telefone": "(11) 2065-7867",
     "email": "NÃO INFORMADO",
     "numero_cotacao": "55845635"
+  },
+  {
+    "data": "11/11/2026",
+    "hora": "11:42:38",
+    "funcionario": "PAULO HENRIQUE",
+    "nome_cliente": "BRUNA",
+    "telefone": "(11) 2946-4646",
+    "email": "bruna@telbra.com.br",
+    "numero_cotacao": "55923136"
   }
 ]
