@@ -7054,5 +7054,14 @@
     "telefone": "(11) 2946-4646",
     "email": "bruna@telbra.com.br",
     "numero_cotacao": "58502861"
+  },
+  {
+    "data": "18/11/2026",
+    "hora": "16:00:15",
+    "funcionario": "PAULO HENRIQUE",
+    "nome_cliente": "MARILENE",
+    "telefone": "(51) 9930-9067",
+    "email": "marilene@cbr.ind.br",
+    "numero_cotacao": "58508391"
   }
 ]
